@@ -7,12 +7,12 @@ const Contact = () => {
 <div>
 <div  className="font-[sans-serif] py-12 px-4 sm:px-6 lg:px-8 bg-white">
          <div className="flex justify-center mb-16">
-          <h2 className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-semibold font-merriweather text-gray-800  uppercase">VISIT US</h2>
+          <h2 className="text-4xl font-semibold font-merriweather text-gray-800  uppercase">VISIT US</h2>
           </div>
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row  lg:flex-row  gap-20">
         
         <div className="w-full md:w-1/2">
-          <h2 className="text-4xl font-merriweather text-gray-800 mb-6 uppercase">Contact Us</h2>
+          <h2 className="text-xl font-merriweather text-gray-800 mb-6 uppercase">Contact Us</h2>
           <form className="space-y-6">
             <input
               type="text"
