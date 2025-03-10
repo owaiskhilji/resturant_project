@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -65,7 +66,7 @@ export default function SpecialServices() {
               Happy Hour Deals
             </h3>
             <p className="text-md sm:text-xl md:text-xl lg:text-2xl text-gray-600 font-playfair">
-              Exclusive discounts on drinks and meals.<a className="text-blue-600 " href="/ourservices"> learn more...</a>
+              Exclusive discounts on drinks and meals.<Link className="text-blue-600 " to="/ourservices"> learn more...</Link>
             </p>
           </div>
         </div>
