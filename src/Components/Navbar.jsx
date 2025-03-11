@@ -2,10 +2,8 @@ import { Link } from 'react-router-dom'
 
 
 
-export default function Navbar({ onContactClick }) {
+export default function Navbar() {
 
-    // const navigate = useNavigate()
-  
   
 function openModal(){
   const modal = document.getElementById('my_modal_3')

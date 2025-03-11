@@ -1,4 +1,4 @@
-import { useEffect , useRef} from "react";
+import { useEffect} from "react";
 import './App.css'
 import {Routes,Route,useLocation } from "react-router-dom";
 import Home from "./Pages/Home"
@@ -27,25 +27,19 @@ function ScrollToTop() {
 
 
 function App() {
-  const contactRef = useRef(null);  
-  const scrollToContact = () => {
-    if (contactRef.current) {
-      contactRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  
   return (
 <div className="overflow-x-hidden">
-<Navbar onContactClick={scrollToContact} />
+<Navbar />
 <OpeningHours/>
     <ScrollToTop/>
     <ReservationPopup/>
 <Routes>
-<Route path="/" element={<Home contactRef={contactRef}/>} />
+<Route path="/" element={<Home/>} />
 <Route path="/about" element={< Aboutus/>} />
 <Route path="/prices" element={< Prices/>} />
 <Route path="/menu" element={< Menu/>} />
 <Route path="/ourservices" element={< OurServices/>} />
-{/* <Route path="/opening-hours" element={<OpeningHours/>} /> */}
 <Route path="/*" element={< Notfound/>} />
 </Routes>
 

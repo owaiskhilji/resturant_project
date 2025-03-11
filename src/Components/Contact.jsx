@@ -51,7 +51,6 @@ const Contact = () => {
           </form>
         </div>
 
-        {/* Right Section: Info */}
         <div className="w-full md:w-1/2 space-y-10">
           <h3 className="text-lg  text-gray-800 font-merriweather">SPECIAL REQUESTS ?</h3>
           <p className="text-gray-600 font-playfair lg:text-xl">
